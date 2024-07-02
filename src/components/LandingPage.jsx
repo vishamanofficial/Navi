@@ -1,27 +1,34 @@
 /* eslint-disable no-unused-vars */
+import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const LandingPage = () => {
   return (
-    <div className="h-auto w-auto bg-[#f1f1f1]  pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed="-.8" className="h-auto w-auto bg-[#f1f1f1]  pt-1">
       <div className="textStructure mt-28 p-20">
         {["WE CREATE", "EYE-OPENING", "WEBSITES"].map((item, index) => (
           <div key={index} className="masker">
             <div className="w-fit flex ">
-              {index == 1 && (<div className="mr-[1vw] w-[8vw] rounded-md h-[5.4vw] bg-red-400 relative top-[1vw]" ></div>)}
+              {index == 1 && (
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "8vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className="mr-[1vw] w-[8vw] h-[5.4vw] rounded-md relative top-[1vw] overflow-hidden"
+                ><img className="w-full h-full object-cover" src="src\assets\img\content-image01.jpg" alt="" /></motion.div>
+              )}
               <h1
-              key={index}
-              className="text-[7.5vw] uppercase leading-[6.5vw] tracking-tighter font-['Founders Grotesk'] font-medium"
-            >
-              {item}
-            </h1>
+                key={index}
+                className="text-[7.5vw] uppercase leading-[6.5vw] tracking-tighter font-['Founders Grotesk'] font-medium"
+              >
+                {item}
+              </h1>
             </div>
-            
           </div>
         ))}
       </div>
-      <div className="border-t-[1px] border-zinc-600 mt-7 flex justify-between items-center px-20 py-5 pb-10">
+      <div className="border-t-[1px] border-zinc-600 mt-7 mb-9 flex justify-between items-center px-20 py-5 pb-10">
         {[
           "For public and private companies",
           "From the first pitch to IPO",

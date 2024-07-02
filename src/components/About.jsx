@@ -1,9 +1,9 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
 
-const About = () => {
+const About = () => { 
   return (
-    <div className='w-full py-24 px-20 bg-[#CDEA68] rounded-t-[2vw] '>
+    <div data-scroll data-scroll-section data-scroll-speed="-.2" className='w-full py-24 px-20 bg-[#CDEA68] rounded-t-[2vw] '>
         <div className='mr-[14vw] '>
             <h1 className='font-["Neue Montreal"] text-[3.5vw] leading-[3.5vw]'>Navi is a strategic partner for fast-growing tech businesses that need to raise funds, sell products, explain complex ideas, and hire great people.</h1>
         </div>

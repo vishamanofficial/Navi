@@ -12,7 +12,7 @@ const Marquee = () => {
             key={idx}
             initial={{ x: "0" }}
             animate={{ x: "-100%" }}
-            transition={{ ease: "linear", duration: 10, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 100, repeat: Infinity }}
             className="text-[25vw] font-['Founders Grotesk'] tracking-tighter leading-none uppercase font-semibold -mt-[2.5vw]"
           >
             {item}
