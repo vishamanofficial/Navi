@@ -16,7 +16,7 @@ const LandingPage = () => {
                   animate={{ width: "8vw" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
                   className="mr-[1vw] w-[8vw] h-[5.4vw] rounded-md relative top-[1vw] overflow-hidden"
-                ><img className="w-full h-full object-cover" src="https://digifloat.io/wp-content/uploads/2020/01/icons8-980x515.png" alt="" /></motion.div>
+                ><img className="w-full h-full object-cover" src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/11/Website-Development-alt-1.webp" alt="" /></motion.div>
               )}
               <h1
                 key={index}
